@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/asendorf_website/precache-manifest.8a70ea1113a8201302d6dbc6f0bee6cd.js"
+  "/asendorf_website/precache-manifest.893baf120a3d0dabfb92baae285aa9e3.js"
 );
 
 self.addEventListener('message', (event) => {
