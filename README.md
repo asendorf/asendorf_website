@@ -34,3 +34,5 @@ npm install -g gh-pages --save-dev
 
 ### Deploying
 [This](https://itnext.io/so-you-want-to-host-your-single-age-react-app-on-github-pages-a826ab01e48) was super helpful
+
+[Routing](https://levelup.gitconnected.com/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2)

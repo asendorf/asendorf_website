@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Switch, Link} from 'react-router-dom';
+import { LinkContainer } from "react-router-bootstrap";
 import { HomePage } from './pages/HomePage';
 import { Interests } from './pages/Interests';
 import { Grad } from './pages/Grad';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import {Nav, Navbar, NavItem} from 'react-bootstrap'
 import './App.css';
 
 const Main = () => (
@@ -23,9 +23,13 @@ const Header = () => (
           <Navbar.Brand href={process.env.PUBLIC_URL + "/"}>Home</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Link to="/grad">Grad Work</Link>
-              <Link to="/interests">Interests</Link>
+            <Nav className="mr-auto" variant="dark">
+              <LinkContainer to="/grad">
+                <Nav.Link>Grad Work</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/interests">
+                <Nav.Link>Interests</Nav.Link>
+             </LinkContainer>
             </Nav>
           </Navbar.Collapse>
           </Navbar>
