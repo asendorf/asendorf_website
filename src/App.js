@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link} from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { Interests } from './pages/Interests';
 import { Grad } from './pages/Grad';
@@ -24,8 +24,8 @@ const Header = () => (
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href={process.env.PUBLIC_URL + "/grad"}>Grad Work</Nav.Link>
-              <Nav.Link href={process.env.PUBLIC_URL + "/interests"}>Interests</Nav.Link>
+              <Link to="/grad">Grad Work</Link>
+              <Link to="/interests">Interests</Link>
             </Nav>
           </Navbar.Collapse>
           </Navbar>
@@ -36,7 +36,7 @@ export default function App() {
     return (
             <div>
               <Header />
-             <Main />
+              <Main />
             </div>
     )
 }

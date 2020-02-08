@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App';
 import './index.css';
@@ -9,9 +9,9 @@ import './index.css';
 console.log("This is the process.env", process.env.PUBLIC_URL)
 
 render(
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename='/'>
           <App />
-        </BrowserRouter>,
+        </HashRouter>,
         document.querySelector("#root")
 )
 
