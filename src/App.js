@@ -1,10 +1,10 @@
 import React from 'react';
-import { Route, Switch, Link} from 'react-router-dom';
+import { Route, Switch} from 'react-router-dom';
 import { LinkContainer } from "react-router-bootstrap";
 import { HomePage } from './pages/HomePage';
 import { Interests } from './pages/Interests';
 import { Grad } from './pages/Grad';
-import {Nav, Navbar, NavItem} from 'react-bootstrap'
+import {Nav, Navbar} from 'react-bootstrap'
 import './App.css';
 
 const Main = () => (
@@ -25,10 +25,10 @@ const Header = () => (
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto" variant="dark">
               <LinkContainer to="/grad">
-                <Nav.Link>Grad Work</Nav.Link>
+                <Nav.Link>Academic Work</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/interests">
-                <Nav.Link>Interests</Nav.Link>
+                <Nav.Link>Hobbies</Nav.Link>
              </LinkContainer>
             </Nav>
           </Navbar.Collapse>

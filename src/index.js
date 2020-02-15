@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-social/bootstrap-social.css'
+import 'font-awesome/css/font-awesome.min.css'
 import App from './App';
 import './index.css';
 //import * as serviceWorker from './serviceWorker'
