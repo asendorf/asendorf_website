@@ -17,19 +17,35 @@ export const Grad = () => (
                 </div>
                <div class="col-md-10">
                  <div class="card-body">
-           
-        <p class="card-text">From 2010-2015, I attended the University of Michigan where I earned my M.S. and Ph.D. in statistical signal processing. My research focused on multi-modal data fusion, particularly high-dimensional sample-starved applications. I applied recent advances in random matrix theory to derive fundamental limits of classical algorithms and to propose improved versions of those algorithms. My advisor was <a href="https://web.eecs.umich.edu/~rajnrao/" target="_blank" rel="noopener noreferrer">Prof. Raj Nadakuditi</a>.</p>
-        <p>Here are a few select research project from my time in graduate school. If you are interested in all of my papers, you can check them out in this github repo.</p>
-        <center><a class="btn  btn-social btn-github" href="https://github.com/asendorf/papers" target="_blank" rel="noopener noreferrer">
-        <span class="fa fa-github"></span>All Papers</a></center>
-        <div class="card-body">
-        <hr></hr>
-        <h5 class="card-title">Thesis - Informative Data Fusion: Beyond Canonical Correlation Analysis</h5>
-        <p>My thesis explores the the problem of detecting correlations from multi-modal data modeled by the ubiquitous signal-plus noise data model. I present a modification to CCA, called informative CCA (ICCA), that uses insights from random matrix theory to first project each dataset onto a low-dimensional informative signal subspace. I apply the ideas learned from ICCA to multiset CCA (MCCA), which analyzes correlations for more than two datasets.</p>
-        <a class="btn  btn-social btn-github mr-1" href="https://github.com/asendorf/papers/tree/master/2015_thesis" target="_blank" rel="noopener noreferrer">
-        <span class="fa fa-github"></span>Paper Repo</a>
-        <a class="btn btn-outline-dark" href="https://deepblue.lib.umich.edu/handle/2027.42/113419" target="_blank" rel="noopener noreferrer">Link to Paper</a>
-        </div>
+
+        <p class="card-text">From 2010-2015, I attended the University of
+        Michigan where I earned my M.S. and Ph.D. in statistical signal
+        processing. My research focused on multi-modal data fusion, particularly
+        high-dimensional sample-starved applications. I applied recent advances
+        in random matrix theory to derive fundamental limits of classical
+        algorithms and to propose improved versions of those algorithms. My
+        advisor was <a href="https://web.eecs.umich.edu/~rajnrao/"
+        target="_blank" rel="noopener noreferrer">Prof. Raj Nadakuditi</a>.</p>
+        <p>Here are a few select research projects from my time in graduate
+        school. If you are interested in all of my papers, you can check them
+        out in this github repo.</p> <center><a class="btn  btn-social
+        btn-github" href="https://github.com/asendorf/papers" target="_blank"
+        rel="noopener noreferrer"> <span class="fa fa-github"></span>All
+        Papers</a></center> <div class="card-body"> <hr></hr> <h5
+        class="card-title">Thesis - Informative Data Fusion: Beyond Canonical
+        Correlation Analysis</h5> <p>My thesis explores the the problem of
+        detecting correlations from multi-modal data modeled by the ubiquitous
+        signal-plus noise data model. I present a modification to CCA, called
+        informative CCA (ICCA), that uses insights from random matrix theory to
+        first project each dataset onto a low-dimensional informative signal
+        subspace. I apply the ideas learned from ICCA to multiset CCA (MCCA),
+        which analyzes correlations for more than two datasets.</p> <a
+        class="btn  btn-social btn-github mr-1"
+        href="https://github.com/asendorf/papers/tree/master/2015_thesis"
+        target="_blank" rel="noopener noreferrer"> <span class="fa
+        fa-github"></span>Paper Repo</a> <a class="btn btn-outline-dark"
+        href="https://deepblue.lib.umich.edu/handle/2027.42/113419"
+        target="_blank" rel="noopener noreferrer">Link to Paper</a> </div>
 
         <div class="card-body">
         <hr></hr>
@@ -61,28 +77,28 @@ export const Grad = () => (
                 </div>
               </div>
               <div class="col-md-10">
-                <div class="card-body">              
+                <div class="card-body">
         <p class="card-text">From 2006-2010, I attended the University of Maryland where I earned my B.S. in computer engineering with a minor in mathematics. I participated in a number of undergraduate reserach opportunites that convinced my past self to go to graduate school.</p>
-        
+
         <div class="card-body">
         <hr></hr>
         <h5 class="card-title">Of Mice and Men: An Ergonomic and Market Assessment of Current Computer Mice</h5>
-        <p>While at Maryland, I participated in a multidisciplinary four-year research program. Our team evaluated the ergonomic performance of various computer mice using a motion capture system, EMG analysis, and force sensors. </p>    
+        <p>While at Maryland, I participated in a multidisciplinary four-year research program. Our team evaluated the ergonomic performance of various computer mice using a motion capture system, EMG analysis, and force sensors. </p>
         <a class="btn btn-outline-dark" href="https://drum.lib.umd.edu/handle/1903/10089" target="_blank" rel="noopener noreferrer">Link to Paper</a>
         </div>
 
             <div class="card-body">
         <hr></hr>
         <h5 class="card-title">The Neural Representation of Auditory Modulations Relevant to Speech</h5>
-        <p>During the summer of 2009, I worked with Prof. Jonathan Simon to measure neural responses to low-frequency amplitude modulated signals using magnetoencephalography.</p>    
+        <p>During the summer of 2009, I worked with Prof. Jonathan Simon to measure neural responses to low-frequency amplitude modulated signals using magnetoencephalography.</p>
         <a class="btn btn-outline-dark" href="https://pdfs.semanticscholar.org/a290/f928d19932f8f93d00f16b3f3fc37d78282b.pdf" target="_blank" rel="noopener noreferrer">Link to Paper</a>
         </div>
-    
-        </div>    
+
+        </div>
            </div>
         </div>
         </div>
         </Jumbotron>
 </div>
- 
+
 )

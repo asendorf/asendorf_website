@@ -4,6 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { HomePage } from './pages/HomePage';
 import { Interests } from './pages/Interests';
 import { Grad } from './pages/Grad';
+import { Work } from './pages/Work';
 import {Nav, Navbar} from 'react-bootstrap'
 import './App.css';
 
@@ -13,6 +14,7 @@ const Main = () => (
             <Route exact path="/" component={HomePage} />
             <Route path="/interests" component={Interests} />
             <Route path="/grad" component={Grad} />
+            <Route path="/work" component={Work} />
           </Switch>
         </div>        
 )
@@ -26,6 +28,9 @@ const Header = () => (
             <Nav className="mr-auto" variant="dark">
               <LinkContainer to="/grad">
                 <Nav.Link>Academic Work</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/work">
+                <Nav.Link>Professional Experience</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/interests">
                 <Nav.Link>Hobbies</Nav.Link>
