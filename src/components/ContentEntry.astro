@@ -1,0 +1,19 @@
+---
+import { withBase } from '../lib/paths.js';
+
+const { heading, image, imageAlt = '', Content } = Astro.props;
+---
+
+<article class="content-entry">
+  {image && (
+    <div class="entry-media">
+      <img src={withBase(image)} alt={imageAlt} loading="lazy" />
+    </div>
+  )}
+  <div class="entry-body">
+    <h2>{heading}</h2>
+    <div class="prose">
+      <Content />
+    </div>
+  </div>
+</article>

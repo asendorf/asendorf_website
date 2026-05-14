@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentEntry from '../components/ContentEntry.astro';
+import PageIntro from '../components/PageIntro.astro';
+import { getCollection, render } from 'astro:content';
+
+const entries = await Promise.all(
+  (await getCollection('interests'))
+    .sort((a, b) => a.data.order - b.data.order)
+    .map(async (entry) => ({
+      ...entry,
+      rendered: await render(entry)
+    }))
+);
+---
+
+<BaseLayout title="Interests | Nick Asendorf" description="Hobbies and interests for Nick Asendorf.">
+  <PageIntro
+    eyebrow="Hobbies & Interests"
+    title="Interests"
+    lead="Personal projects, music, and a few things outside of work."
+  />
+  <section class="entry-list">
+    {entries.map((entry) => (
+      <ContentEntry
+        heading={entry.data.title}
+        image={entry.data.image}
+        imageAlt={entry.data.imageAlt}
+        Content={entry.rendered.Content}
+      />
+    ))}
+  </section>
+</BaseLayout>

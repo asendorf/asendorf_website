@@ -1,38 +1,40 @@
 # Nick's Personal Website
 
-I used this as a side project to learn a little more about front-end design. I'm choosing
-to deploy a REACT app via github pages. I'll use the README here to document my process
-and debugging.
+This is a static personal website built with [Astro](https://astro.build/) and deployed with GitHub Pages.
 
-### Getting started
+## Local Development
 
-First, I install node
-```
-sudo apt-get install nodejs
-sudo apt-get install npm
-```
-Then I installed
-```
-sudo npm install -g create-react-app
-```
-And created the React app via
-```
-create-react-app asendorf.github.io
-```
-If everything worked, you should be able to run `npm start` and then go to `localhost:3000` to see the React template. Success!
-
-### Creating a Shell
-So now let's create a dummy page so that we can deploy it. I found [this](https://www.taniarascia.com/getting-started-with-react/) pretty helpful.
-
-Here were some extra things I needed to install
-```
-npm install react-router-dom axios
-npm install react-bootstrap bootstrap
-npm i jquery popper.js
-npm install -g gh-pages --save-dev
+```sh
+npm install
+npm run dev
 ```
 
-### Deploying
-[This](https://itnext.io/so-you-want-to-host-your-single-age-react-app-on-github-pages-a826ab01e48) was super helpful
+Astro will print the local development URL.
 
-[Routing](https://levelup.gitconnected.com/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2)
+## Build
+
+```sh
+npm run build
+npm run preview
+```
+
+The production site is generated into `dist/`. That directory is build output and should not be committed.
+
+## Updating Content
+
+Most site content is editable without touching page layout code:
+
+- Profile and homepage summary: `src/data/profile.js`
+- Experience entries: `src/content/experience/*.md`
+- Research entries: `src/content/research/*.md`
+- Interests entries: `src/content/interests/*.md`
+- Static files: `public/files/`
+- Images: `public/images/`
+
+Each Markdown file uses frontmatter for ordering and display metadata, followed by regular Markdown content.
+
+## Deployment
+
+Deployment is handled by `.github/workflows/pages.yml`.
+
+On every push to `main`, GitHub Actions installs dependencies, runs `npm run build`, uploads `dist/`, and deploys it to GitHub Pages. In the repository settings, configure GitHub Pages to use **GitHub Actions** as the publishing source.

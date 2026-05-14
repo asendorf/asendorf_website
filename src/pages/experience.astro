@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentEntry from '../components/ContentEntry.astro';
+import PageIntro from '../components/PageIntro.astro';
+import { getCollection, render } from 'astro:content';
+
+const entries = await Promise.all(
+  (await getCollection('experience'))
+    .sort((a, b) => a.data.order - b.data.order)
+    .map(async (entry) => ({
+      ...entry,
+      rendered: await render(entry)
+    }))
+);
+---
+
+<BaseLayout title="Experience | Nick Asendorf" description="Professional experience for Nick Asendorf.">
+  <PageIntro
+    eyebrow="Professional Experience"
+    title="Experience"
+    lead="A record of software leadership, data science, research, and engineering work."
+  />
+  <section class="entry-list">
+    {entries.map((entry) => (
+      <ContentEntry
+        heading={entry.data.organization}
+        image={entry.data.image}
+        imageAlt={entry.data.imageAlt}
+        Content={entry.rendered.Content}
+      />
+    ))}
+  </section>
+</BaseLayout>

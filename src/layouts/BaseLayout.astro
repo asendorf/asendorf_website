@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+import { withBase } from '../lib/paths.js';
+
+const { title = 'Nick Asendorf', description = 'Personal website for Nick Asendorf.' } = Astro.props;
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/experience/', label: 'Experience' },
+  { href: '/research/', label: 'Research' },
+  { href: '/interests/', label: 'Interests' }
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href={withBase('/favicon.ico')} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href={withBase('/')}>Nick Asendorf</a>
+        <div class="nav-links">
+          {navItems.map((item) => (
+            <a href={withBase(item.href)}>{item.label}</a>
+          ))}
+          <a class="nav-action" href={withBase('/files/asendorf_resume.pdf')}>Resume</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+  </body>
+</html>
