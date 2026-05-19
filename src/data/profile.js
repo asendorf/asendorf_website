@@ -1,21 +1,19 @@
 export const profile = {
   name: 'Nick Asendorf',
-  title: 'Dad, husband, data scientist, software manager, and dungeon master.',
-  location: 'St. Paul, MN',
-  resumeUrl: '/files/asendorf_resume.pdf',
+  roles: ['Scientific Information Officer', 'AI Manager'],
   image: '/images/profile_pic.jpg',
   summary:
-    "I am a dad, husband, data scientist, software manager, and dungeon master. I currently manage a group of software engineers in 3M's Corporate Research Labs. I have a Ph.D. in statistical signal processing and still dabble in the arts of machine learning.",
-  questions: [
-    'What problem are you trying to solve?',
-    'What data do you have?'
-  ],
-  bio:
-    'I am originally from the great state of Maryland, spent 5 years in Michigan, and decided to trudge further into the midwest, settling in St. Paul MN. In my free time I enjoy running, watching the NBA, and playing dungeons and dragons.',
-  links: [
+    "I am the Scientific Information Officer at the National Heart, Lung, and Blood Institute at the NIH, supporting the diverse research of the NHLBI's intramural research program. I lead scientific IT and AI teams who use cutting-edge technologies to turn complex biomedical data into scientific advances. I have a Ph.D. in statistical signal processing and still dabble in the arts of machine learning.",
+  socialLinks: [
     {
-      label: 'All Papers',
-      href: 'https://github.com/asendorf/papers'
+      label: 'LinkedIn',
+      icon: 'linkedin',
+      href: 'https://www.linkedin.com/in/asendorf/'
+    },
+    {
+      label: 'GitHub',
+      icon: 'github',
+      href: 'https://github.com/asendorf'
     }
   ]
 };

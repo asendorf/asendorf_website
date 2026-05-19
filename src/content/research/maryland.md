@@ -11,10 +11,10 @@ From 2006-2010, I attended the University of Maryland where I earned my B.S. in 
 
 While at Maryland, I participated in a multidisciplinary four-year research program. Our team evaluated the ergonomic performance of various computer mice using a motion capture system, EMG analysis, and force sensors.
 
-[Link to Paper](https://drum.lib.umd.edu/handle/1903/10089)
+[View Paper](https://drum.lib.umd.edu/handle/1903/10089)
 
 ## The Neural Representation of Auditory Modulations Relevant to Speech
 
 During the summer of 2009, I worked with Prof. Jonathan Simon to measure neural responses to low-frequency amplitude modulated signals using magnetoencephalography.
 
-[Link to Paper](https://pdfs.semanticscholar.org/a290/f928d19932f8f93d00f16b3f3fc37d78282b.pdf)
+[View Paper](https://pdfs.semanticscholar.org/a290/f928d19932f8f93d00f16b3f3fc37d78282b.pdf)

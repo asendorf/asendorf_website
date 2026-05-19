@@ -7,38 +7,14 @@ import { withBase } from '../lib/paths.js';
 <BaseLayout title="Nick Asendorf" description="Personal website for Nick Asendorf.">
   <section class="hero">
     <div class="hero-copy">
-      <p class="eyebrow">{profile.location}</p>
       <h1>{profile.name}</h1>
-      <p class="hero-title">{profile.title}</p>
+      <ul class="role-list" aria-label="Current roles">
+        {profile.roles.map((role) => <li>{role}</li>)}
+      </ul>
       <p>{profile.summary}</p>
-      <div class="hero-actions">
-        <a class="button primary" href={withBase(profile.resumeUrl)}>Resume</a>
-        <a class="button secondary" href={withBase('/experience/')}>Experience</a>
-      </div>
     </div>
     <div class="hero-image">
       <img src={withBase(profile.image)} alt="Nick Asendorf" />
     </div>
-  </section>
-
-  <section class="home-section two-column">
-    <div>
-      <p class="eyebrow">Approach</p>
-      <h2>Two Questions</h2>
-    </div>
-    <div class="question-panel">
-      <p>I approach technical projects by asking two fundamental questions:</p>
-      <ol>
-        {profile.questions.map((question) => <li>{question}</li>)}
-      </ol>
-    </div>
-  </section>
-
-  <section class="home-section two-column">
-    <div>
-      <p class="eyebrow">Background</p>
-      <h2>About</h2>
-    </div>
-    <p class="large-copy">{profile.bio}</p>
   </section>
 </BaseLayout>

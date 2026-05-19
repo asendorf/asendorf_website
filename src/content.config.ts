@@ -3,8 +3,8 @@ import { glob } from 'astro/loaders';
 
 const baseEntry = {
   order: z.number(),
-  image: z.string(),
-  imageAlt: z.string()
+  image: z.string().optional(),
+  imageAlt: z.string().optional()
 };
 
 const experience = defineCollection({
